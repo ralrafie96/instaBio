@@ -7,24 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rami Al-Rafie - Links</title>
     <link rel="stylesheet" href="./index.css" />
+    <script>
+        setTimeout(() => {
+            const profile = document.getElementById('profile')
+            profile.style.opacity = 1
+            profile.style.top = '0rem'
+        }, 1000);
+        setTimeout(() => {
+            const tag = document.getElementById('tag')
+            tag.style.opacity = 1
+            tag.style.top = '0rem'
+        }, 1500);
+        setTimeout(() => {
+            const web = document.getElementById('Website')
+            web.style.opacity = 1
+            web.style.top = '0rem'
+        }, 3000);
+        setTimeout(() => {
+            const fb = document.getElementById('Facebook')
+            fb.style.opacity = 1
+            fb.style.top = '0rem'
+        }, 3500);
+        setTimeout(() => {
+            const gh = document.getElementById('GitHub')
+            gh.style.opacity = 1
+            gh.style.top = '0rem'
+        }, 4000);
+        setTimeout(() => {
+            const li = document.getElementById('LinkedIn')
+            li.style.opacity = 1
+            li.style.top = '0rem'
+        }, 4500);
+    </script>
 </head>
 
 <body>
     <header>
-        <img src="./images/profile_photo.jpg" />
-        <h1>@ramialrafie</h1>
+        <img id='profile' src="./images/profile_photo.jpg" />
+        <h1 id="tag">@ramialrafie</h1>
     </header>
     <ul>
-        <li>
+        <li id='Website'>
             <a href="https://www.ramialrafie.com"><img src="./images/duck with knife.png" />Official Website</a>
         </li>
-        <li>
+        <li id='Facebook'>
             <a href="https://www.ramialrafie.com"><img src="./images/icons8-facebook.svg" />Facebook</a>
         </li>
-        <li>
+        <li id='GitHub'>
             <a href="https://www.ramialrafie.com"><img src="./images/icons8-github.svg" />GitHub</a>
         </li>
-        <li>
+        <li id="LinkedIn">
             <a href="https://www.ramialrafie.com"><img src="./images/icons8-linkedin.svg" />LinkedIn</a>
         </li>
     </ul>
