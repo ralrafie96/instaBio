@@ -21,23 +21,20 @@
         setTimeout(() => {
             const web = document.getElementById('Website')
             web.style.opacity = 1
-            web.style.top = '0rem'
-        }, 3000);
-        setTimeout(() => {
+            web.style.filter = 'blur(0px)'
+
             const fb = document.getElementById('Facebook')
             fb.style.opacity = 1
-            fb.style.top = '0rem'
-        }, 3500);
-        setTimeout(() => {
+            fb.style.filter = 'blur(0px)'
+
             const gh = document.getElementById('GitHub')
             gh.style.opacity = 1
-            gh.style.top = '0rem'
-        }, 4000);
-        setTimeout(() => {
+            gh.style.filter = 'blur(0px)'
+
             const li = document.getElementById('LinkedIn')
             li.style.opacity = 1
-            li.style.top = '0rem'
-        }, 4500);
+            li.style.filter = 'blur(0px)'
+        }, 3000);
     </script>
 </head>
 
@@ -47,18 +44,26 @@
         <h1 id="tag">@ramialrafie</h1>
     </header>
     <ul>
-        <li id='Website'>
-            <a href="https://www.ramialrafie.com"><img src="./images/duck with knife.png" />Official Website</a>
-        </li>
-        <li id='Facebook'>
-            <a href="https://www.ramialrafie.com"><img src="./images/icons8-facebook.svg" />Facebook</a>
-        </li>
-        <li id='GitHub'>
-            <a href="https://www.ramialrafie.com"><img src="./images/icons8-github.svg" />GitHub</a>
-        </li>
-        <li id="LinkedIn">
-            <a href="https://www.ramialrafie.com"><img src="./images/icons8-linkedin.svg" />LinkedIn</a>
-        </li>
+        <a href="https://www.ramialrafie.com">
+            <li id='Website'>
+                <img src="./images/duck with knife.png" />Official Website
+            </li>
+        </a>
+        <a href="https://www.ramialrafie.com">
+            <li id='Facebook'>
+                <img src="./images/icons8-facebook.svg" />Facebook
+            </li>
+        </a>
+        <a href="https://www.ramialrafie.com">
+            <li id='GitHub'>
+                <img src="./images/icons8-github.svg" />GitHub
+            </li>
+        </a>
+        <a href="https://www.ramialrafie.com">
+            <li id="LinkedIn">
+                <img src="./images/icons8-linkedin.svg" />LinkedIn
+            </li>
+        </a>
     </ul>
 </body>
 
