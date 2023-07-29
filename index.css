@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background: url(./images/alhuda-minbar.jpg) repeat center center fixed;
+    /* background: url(./images/alhuda-minbar.jpg) repeat center center fixed; */
     background-size: cover;
 }
 
@@ -20,8 +20,8 @@ header {
 
 header > img {
     z-index: 1;
-    position: relative;
-    top: -3rem;
+    position: absolute;
+    top: -4rem;
     opacity: 0;
     width: 8rem;
     height: 8rem;
@@ -34,8 +34,8 @@ header > img {
 }
 
 header > h1 {
-    position: relative;
-    top: -3rem;
+    position: absolute;
+    top: 6.5rem;
     opacity: 0;
     display: inline-block;
     font-size: 1.2rem;
@@ -63,12 +63,10 @@ ul {
 
 li {
     position: relative;
-    /* top: -3rem; */
     filter: blur(10px);
     opacity: 0;
     display: flex;
     justify-content: center;
-    border: 1px solid #000a;
     border-radius: 4rem;
     margin: 1rem;
     padding: 0.4rem 0.8rem;
@@ -76,24 +74,79 @@ li {
     backdrop-filter: blur(5px) saturate(160%) contrast(180%);
     -webkit-backdrop-filter: blur(5px) saturate(160%) contrast(180%);
     transition: all 0.8s ease;
+    width: 80%;
+    max-width: 50rem;
 }
 
 a {
-    width: 80%;
-    max-width: 50rem;
     color: black;
     text-decoration: none;
     width: 100%;
 }
 
-a > li {
+li > a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-a > li > img {
+li > a > img {
     width: 3rem;
     height: 3rem;
 }
+
+.background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background-color: bisque;
+    overflow: hidden;
+  
+  }
+  
+  .circle-blue {
+    position: absolute;
+    top: -28rem;
+    right: 8rem;
+    width: 1000%;
+    height: 1000%;
+    background-image: url("./images/circle-blue.png");
+    opacity: 70%;
+    transform: skew(-15deg, -15deg);
+    animation: circle-animation-x 2s linear 0s infinite;
+  }
+  
+  .circle-red {
+    position: absolute;
+    top: -30rem;
+    right: 10rem;
+    width: 1000%;
+    height: 1000%;
+    background-image: url("./images/circle-red.png");
+    opacity: 70%;
+    transform: skew(-15deg, -15deg);
+    animation: circle-animation-y 2s linear 0s infinite;
+  }
+  
+  @keyframes circle-animation-x {
+    0% {
+      background-position-x: 0rem;
+    }
+    100% {
+      background-position-x: 17rem;
+    }
+  }
+  
+  @keyframes circle-animation-y {
+    0% {
+      background-position-y: 0rem;
+    }
+    100% {
+      background-position-y: 15rem;
+    }
+  }

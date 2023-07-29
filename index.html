@@ -11,12 +11,12 @@
         setTimeout(() => {
             const profile = document.getElementById('profile')
             profile.style.opacity = 1
-            profile.style.top = '0rem'
+            profile.style.top = '1rem'
         }, 1000);
         setTimeout(() => {
             const tag = document.getElementById('tag')
             tag.style.opacity = 1
-            tag.style.top = '0rem'
+            tag.style.top = '9.5rem'
         }, 1500);
         setTimeout(() => {
             const web = document.getElementById('Website')
@@ -39,32 +39,37 @@
 </head>
 
 <body>
-    <header>
-        <img id='profile' src="./images/profile_photo.jpg" />
-        <h1 id="tag">@ramialrafie</h1>
-    </header>
-    <ul>
-        <a href="https://www.ramialrafie.com">
+    <div class="background">
+        <div class="circle-blue"></div>
+        <div class="circle-red"></div>
+        <header>
+            <img id='profile' src="./images/profile_photo.jpg" />
+            <h1 id="tag">@ramialrafie</h1>
+        </header>
+        <ul>
             <li id='Website'>
-                <img src="./images/duck with knife.png" />Official Website
+                <a href="https://www.ramialrafie.com">
+                    <img src="./images/duck with knife.png" />Official Website
+                </a>
             </li>
-        </a>
-        <a href="https://www.ramialrafie.com">
             <li id='Facebook'>
-                <img src="./images/icons8-facebook.svg" />Facebook
+                <a href="https://www.facebook.com/ralrafie/">
+                    <img src="./images/icons8-facebook.svg" />Facebook
+                </a>
             </li>
-        </a>
-        <a href="https://www.ramialrafie.com">
             <li id='GitHub'>
-                <img src="./images/icons8-github.svg" />GitHub
+                <a href="https://github.com/ralrafie96">
+                    <img src="./images/icons8-github.svg" />GitHub
+                </a>
             </li>
-        </a>
-        <a href="https://www.ramialrafie.com">
             <li id="LinkedIn">
-                <img src="./images/icons8-linkedin.svg" />LinkedIn
+                <a href="https://www.linkedin.com/in/rami-al-rafie-b55b4114a/">
+                    <img src="./images/icons8-linkedin.svg" />LinkedIn
+                </a>
             </li>
-        </a>
-    </ul>
+            </a>
+        </ul>
+    </div>
 </body>
 
 </html>
